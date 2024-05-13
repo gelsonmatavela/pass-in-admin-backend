@@ -1,0 +1,33 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": 123,
+    "details": "Assim mesmo",
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/a6216324-2b38-4ce9-9a2d-010705fd2701/attendees
+Content-Type: application/json
+
+{
+    "name": "Kyle Yamikane Rohomoja",
+    "email": "kylerohomoja@simplicity.com"
+}
+
+###
+
+GET http://localhost:3333/events/a6216324-2b38-4ce9-9a2d-010705fd2701
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+###
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/a6216324-2b38-4ce9-9a2d-010705fd2701/attendees
